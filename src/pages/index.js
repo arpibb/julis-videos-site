@@ -36,7 +36,7 @@ const GlobalStyles = createGlobalStyle`
 
 const StyledRow = styled.div`
   display: flex;
-  margin-top: 2%;
+  margin-top: 1%;
 `;
 
 const StyledFirstRow = styled(StyledRow)`
@@ -44,6 +44,7 @@ const StyledFirstRow = styled(StyledRow)`
 `;
 
 const StyledSecondRow = styled(StyledRow)`
+  padding: 20px 200px;
   justify-content: space-around;
 `;
 
