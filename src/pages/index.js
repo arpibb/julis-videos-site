@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import poemTextImage from '../images/felkeleken_vers.png';
+import titleImage from '../images/felkeleken_logo.png';
 
 const GlobalStyles = createGlobalStyle`
   #___gatsby{
@@ -28,7 +29,7 @@ const GlobalStyles = createGlobalStyle`
   main {
     background-color: #232df1;
     height: 100%;
-    padding: 5% 0 0 0;
+    padding: 3% 0 0 0;
     margin: 0 auto;
     box-sizing: border-box;
 
@@ -38,6 +39,12 @@ const GlobalStyles = createGlobalStyle`
 const StyledRow = styled.div`
   display: flex;
   margin-top: 1%;
+`;
+
+const StyledTextRow = styled(StyledRow)`
+  justify-content: center;
+  margin-top: 0;
+  padding-bottom: 2.5%;
 `;
 
 const StyledFirstRow = styled(StyledRow)`
@@ -58,6 +65,16 @@ const IndexPage = () => {
     <>
       <GlobalStyles />
       <main>
+        <StyledTextRow>
+          <img
+            src={titleImage}
+            style={{
+              width: '300px',
+              height: 'auto',
+            }}
+          />
+        </StyledTextRow>
+
         <StyledFirstRow>
           <iframe
             src='https://player.vimeo.com/video/703459983?h=cee729d877&color=ffffff&byline=0&portrait=0'
@@ -119,7 +136,7 @@ const IndexPage = () => {
             height: 'auto',
             position: 'absolute',
             left: '24px',
-            top: '150px',
+            top: '225px',
           }}
         />
         <img
@@ -129,7 +146,7 @@ const IndexPage = () => {
             height: 'auto',
             position: 'absolute',
             right: '24px',
-            top: '150px',
+            top: '225px',
           }}
         />
       </main>
