@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
+import poemTextImage from '../images/felkeleken_vers.png';
 
 const GlobalStyles = createGlobalStyle`
   #___gatsby{
@@ -28,7 +29,7 @@ const GlobalStyles = createGlobalStyle`
     background-color: #232df1;
     height: 100%;
     padding: 5% 0 0 0;
-    margin: 0;
+    margin: 0 auto;
     box-sizing: border-box;
 
   }
@@ -111,6 +112,26 @@ const IndexPage = () => {
             allowfullscreen
           ></iframe>
         </StyledThirdRow>
+        <img
+          src={poemTextImage}
+          style={{
+            width: '300px',
+            height: 'auto',
+            position: 'absolute',
+            left: '24px',
+            top: '150px',
+          }}
+        />
+        <img
+          src={poemTextImage}
+          style={{
+            width: '300px',
+            height: 'auto',
+            position: 'absolute',
+            right: '24px',
+            top: '150px',
+          }}
+        />
       </main>
     </>
   );
