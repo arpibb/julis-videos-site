@@ -4,15 +4,19 @@ import poemTextImage from '../images/felkeleken_vers.png';
 import titleImage from '../images/felkeleken_logo.png';
 
 const GlobalStyles = createGlobalStyle`
-  #___gatsby{
+  html {
     background-color: #232df1;
+
+  }
+  #___gatsby{
+    background-color: inherit;
     height: 100vh;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
   #gatsby-focus-wrapper{
-    background-color: #232df1;
+    background-color: inherit;
     height: 100vh;
     padding: 0;
     margin: 0;
@@ -20,6 +24,7 @@ const GlobalStyles = createGlobalStyle`
 
   }
   body {
+    background-color: inherit;
     height: 100vh;
     padding: 0;
     margin: 0;
@@ -27,9 +32,9 @@ const GlobalStyles = createGlobalStyle`
 
   }
   main {
-    background-color: #232df1;
+    background-color: inherit;
     height: 100%;
-    padding: 3% 0 0 0;
+    padding: 2% 0 0 0;
     margin: 0 auto;
     box-sizing: border-box;
 
@@ -45,32 +50,38 @@ const StyledTextRow = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 0;
-  padding-bottom: 2.5%;
+  padding-bottom: 1%;
+`;
+
+const StyledAllVideoWrapper = styled.div`
+  background-color: inherit;
+  position: relative;
+  height: 100vh;
 `;
 
 const StyledFirstVideo = styled(AbsoluteWrapper)`
-  top: 45%;
-  left: 57.5%;
+  top: 39%;
+  left: 50%;
 `;
 
 const StyledSecondVideo = styled(AbsoluteWrapper)`
-  top: 62%;
+  top: 54%;
   left: 60%;
 `;
 
 const StyledThirdVideo = styled(AbsoluteWrapper)`
   top: 75%;
-  left: calc(50% - 108px);
+  left: calc(50% - 144px);
 `;
 
 const StyledFourthVideo = styled(AbsoluteWrapper)`
-  top: 45%;
-  left: 25%;
+  top: 40%;
+  left: 15%;
 `;
 
 const StyledFifthVideo = styled(AbsoluteWrapper)`
-  top: 15%;
-  left: calc(50% - 160px);
+  top: 0;
+  left: calc(50% - 180px);
 `;
 
 const IndexPage = () => {
@@ -87,62 +98,63 @@ const IndexPage = () => {
             }}
           />
         </StyledTextRow>
-
-        <StyledFifthVideo>
-          <iframe
-            src='https://player.vimeo.com/video/703459983?h=cee729d877&color=ffffff&byline=0&portrait=0'
-            width='320'
-            height='180'
-            frameborder='0'
-            allow='autoplay; fullscreen; picture-in-picture'
-            allowfullscreen
-            id={5}
-          ></iframe>
-        </StyledFifthVideo>
-        <StyledFourthVideo>
-          <iframe
-            src='https://player.vimeo.com/video/705511422?h=0efc6fbe38'
-            width='256'
-            height='144'
-            frameborder='0'
-            allow='autoplay; fullscreen; picture-in-picture'
-            allowfullscreen
-            id={4}
-          ></iframe>
-        </StyledFourthVideo>
-        <StyledThirdVideo>
-          <iframe
-            src='https://player.vimeo.com/video/705510337?h=9244c39330'
-            width='192'
-            height='108'
-            frameborder='0'
-            allow='autoplay; fullscreen; picture-in-picture'
-            allowfullscreen
-            id={3}
-          ></iframe>
-        </StyledThirdVideo>
-        <StyledSecondVideo>
-          <iframe
-            src='https://player.vimeo.com/video/705509912?h=1f1327444e'
-            width='128'
-            height='72'
-            frameborder='0'
-            allow='autoplay; fullscreen; picture-in-picture'
-            allowfullscreen
-            id={2}
-          ></iframe>
-        </StyledSecondVideo>
-        <StyledFirstVideo>
-          <iframe
-            src='https://player.vimeo.com/video/705509449?h=20bc40e5fb'
-            width='96'
-            height='54'
-            frameborder='0'
-            allow='autoplay; fullscreen; picture-in-picture'
-            allowfullscreen
-            id={1}
-          ></iframe>
-        </StyledFirstVideo>
+        <StyledAllVideoWrapper>
+          <StyledFifthVideo>
+            <iframe
+              src='https://player.vimeo.com/video/705880840?h=7f2ca28075'
+              width='360'
+              height='240'
+              frameborder='0'
+              allow='autoplay; fullscreen; picture-in-picture'
+              allowfullscreen
+              id={5}
+            ></iframe>
+          </StyledFifthVideo>
+          <StyledFourthVideo>
+            <iframe
+              src='https://player.vimeo.com/video/705511422?h=0efc6fbe38'
+              width='320'
+              height='180'
+              frameborder='0'
+              allow='autoplay; fullscreen; picture-in-picture'
+              allowfullscreen
+              id={4}
+            ></iframe>
+          </StyledFourthVideo>
+          <StyledThirdVideo>
+            <iframe
+              src='https://player.vimeo.com/video/705510337?h=9244c39330'
+              width='256'
+              height='144'
+              frameborder='0'
+              allow='autoplay; fullscreen; picture-in-picture'
+              allowfullscreen
+              id={3}
+            ></iframe>
+          </StyledThirdVideo>
+          <StyledSecondVideo>
+            <iframe
+              src='https://player.vimeo.com/video/705509912?h=1f1327444e'
+              width='192'
+              height='108'
+              frameborder='0'
+              allow='autoplay; fullscreen; picture-in-picture'
+              allowfullscreen
+              id={2}
+            ></iframe>
+          </StyledSecondVideo>
+          <StyledFirstVideo>
+            <iframe
+              src='https://player.vimeo.com/video/705509449?h=20bc40e5fb'
+              width='128'
+              height='72'
+              frameborder='0'
+              allow='autoplay; fullscreen; picture-in-picture'
+              allowfullscreen
+              id={1}
+            ></iframe>
+          </StyledFirstVideo>
+        </StyledAllVideoWrapper>
         {/* <img
           src={poemTextImage}
           style={{
