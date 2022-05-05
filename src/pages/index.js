@@ -39,6 +39,29 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
+const videoSizes = {
+  1: {
+    width: 128,
+    height: 72,
+  },
+  2: {
+    width: 256,
+    height: 144,
+  },
+  3: {
+    width: 341,
+    height: 192,
+  },
+  4: {
+    width: 426,
+    height: 240,
+  },
+  5: {
+    width: 480,
+    height: 320,
+  },
+};
+
 const AbsoluteWrapper = styled.div`
   position: absolute;
   margin-top: 1%;
@@ -58,22 +81,22 @@ const StyledAllVideoWrapper = styled.div`
 `;
 
 const StyledFirstVideo = styled(AbsoluteWrapper)`
-  top: calc(510px - 144px - 72px);
-  left: calc(50% - 240px + 341px - 128px);
+  top: calc(295px + 240px - 144px - 72px);
+  left: calc(50% - 240px + ${videoSizes[3].width}px - 128px);
 `;
 
 const StyledSecondVideo = styled(AbsoluteWrapper)`
-  top: calc(510px - 144px);
+  top: calc(295px + 240px - 144px);
   left: calc(50% - 240px + 341px);
 `;
 
 const StyledThirdVideo = styled(AbsoluteWrapper)`
-  top: 510px;
+  top: calc(295px + 240px);
   left: calc(50% - 240px);
 `;
 
 const StyledFourthVideo = styled(AbsoluteWrapper)`
-  top: 270px;
+  top: 295px;
   left: calc(50% - 240px - 426px);
 `;
 
