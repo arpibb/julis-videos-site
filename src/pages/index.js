@@ -6,7 +6,6 @@ import titleImage from '../images/felkeleken_logo.png';
 const GlobalStyles = createGlobalStyle`
   html {
     background-color: #232df1;
-
   }
   #___gatsby{
     background-color: inherit;
@@ -25,7 +24,6 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     background-color: inherit;
-    height: 100vh;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -60,28 +58,28 @@ const StyledAllVideoWrapper = styled.div`
 `;
 
 const StyledFirstVideo = styled(AbsoluteWrapper)`
-  top: 39%;
-  left: 50%;
+  top: calc(510px - 144px - 72px);
+  left: calc(50% - 240px + 341px - 128px);
 `;
 
 const StyledSecondVideo = styled(AbsoluteWrapper)`
-  top: 54%;
-  left: 60%;
+  top: calc(510px - 144px);
+  left: calc(50% - 240px + 341px);
 `;
 
 const StyledThirdVideo = styled(AbsoluteWrapper)`
-  top: 75%;
-  left: calc(50% - 144px);
+  top: 510px;
+  left: calc(50% - 240px);
 `;
 
 const StyledFourthVideo = styled(AbsoluteWrapper)`
-  top: 40%;
-  left: 15%;
+  top: 270px;
+  left: calc(50% - 240px - 426px);
 `;
 
 const StyledFifthVideo = styled(AbsoluteWrapper)`
   top: 0;
-  left: calc(50% - 180px);
+  left: calc(50% - 240px);
 `;
 
 const IndexPage = () => {
@@ -102,8 +100,8 @@ const IndexPage = () => {
           <StyledFifthVideo>
             <iframe
               src='https://player.vimeo.com/video/705880840?h=7f2ca28075'
-              width='360'
-              height='240'
+              width='480'
+              height='320'
               frameborder='0'
               allow='autoplay; fullscreen; picture-in-picture'
               allowfullscreen
@@ -113,8 +111,8 @@ const IndexPage = () => {
           <StyledFourthVideo>
             <iframe
               src='https://player.vimeo.com/video/705511422?h=0efc6fbe38'
-              width='320'
-              height='180'
+              width='426'
+              height='240'
               frameborder='0'
               allow='autoplay; fullscreen; picture-in-picture'
               allowfullscreen
@@ -124,8 +122,8 @@ const IndexPage = () => {
           <StyledThirdVideo>
             <iframe
               src='https://player.vimeo.com/video/705510337?h=9244c39330'
-              width='256'
-              height='144'
+              width='341'
+              height='192'
               frameborder='0'
               allow='autoplay; fullscreen; picture-in-picture'
               allowfullscreen
@@ -135,8 +133,8 @@ const IndexPage = () => {
           <StyledSecondVideo>
             <iframe
               src='https://player.vimeo.com/video/705509912?h=1f1327444e'
-              width='192'
-              height='108'
+              width='256'
+              height='144'
               frameborder='0'
               allow='autoplay; fullscreen; picture-in-picture'
               allowfullscreen
