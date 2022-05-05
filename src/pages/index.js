@@ -81,28 +81,33 @@ const StyledAllVideoWrapper = styled.div`
 `;
 
 const StyledFirstVideo = styled(AbsoluteWrapper)`
-  top: calc(295px + 240px - 144px - 72px);
-  left: calc(50% - 240px + ${videoSizes[3].width}px - 128px);
+  top: calc(
+    -30px + 295px + ${videoSizes[4].height}px - ${videoSizes[2].height}px - ${videoSizes[1].height}px
+  );
+  left: calc(
+    55% - ${videoSizes[5].width / 2}px + ${videoSizes[3].width}px -
+      ${videoSizes[1].width}px
+  );
 `;
 
 const StyledSecondVideo = styled(AbsoluteWrapper)`
-  top: calc(295px + 240px - 144px);
-  left: calc(50% - 240px + 341px);
+  top: calc(-30px + 295px + ${videoSizes[4].height}px - 144px);
+  left: calc(55% - ${videoSizes[5].width / 2}px + ${videoSizes[3].width}px);
 `;
 
 const StyledThirdVideo = styled(AbsoluteWrapper)`
-  top: calc(295px + 240px);
-  left: calc(50% - 240px);
+  top: calc(-30px + 295px + ${videoSizes[4].height}px);
+  left: calc(55% - ${videoSizes[5].width / 2}px);
 `;
 
 const StyledFourthVideo = styled(AbsoluteWrapper)`
-  top: 295px;
-  left: calc(50% - 240px - 426px);
+  top: calc(-30px + 295px);
+  left: calc(55% - ${videoSizes[5].width / 2}px - ${videoSizes[4].width}px);
 `;
 
 const StyledFifthVideo = styled(AbsoluteWrapper)`
-  top: 0;
-  left: calc(50% - 240px);
+  top: -30px;
+  left: calc(55% - ${videoSizes[5].width / 2}px);
 `;
 
 const IndexPage = () => {
@@ -114,7 +119,7 @@ const IndexPage = () => {
           <img
             src={titleImage}
             style={{
-              width: '300px',
+              width: '400px',
               height: 'auto',
             }}
           />
