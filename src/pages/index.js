@@ -35,7 +35,6 @@ const GlobalStyles = createGlobalStyle`
     padding: 2% 0 0 0;
     margin: 0 auto;
     box-sizing: border-box;
-
   }
 `;
 
@@ -71,43 +70,54 @@ const StyledTextRow = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 0;
-  padding-bottom: 1%;
+  padding-bottom: 3%;
 `;
 
 const StyledAllVideoWrapper = styled.div`
   background-color: inherit;
   position: relative;
   height: 100vh;
+  width: calc(
+    ${videoSizes[4].width}px + ${videoSizes[3].width}px +
+      ${videoSizes[2].width}px
+  );
+  margin: 0 auto;
 `;
+
+const basicLeft = 65;
 
 const StyledFirstVideo = styled(AbsoluteWrapper)`
   top: calc(
     -30px + 295px + ${videoSizes[4].height}px - ${videoSizes[2].height}px - ${videoSizes[1].height}px
   );
   left: calc(
-    55% - ${videoSizes[5].width / 2}px + ${videoSizes[3].width}px -
+    ${basicLeft}% - ${videoSizes[5].width / 2}px + ${videoSizes[3].width}px -
       ${videoSizes[1].width}px
   );
 `;
 
 const StyledSecondVideo = styled(AbsoluteWrapper)`
   top: calc(-30px + 295px + ${videoSizes[4].height}px - 144px);
-  left: calc(55% - ${videoSizes[5].width / 2}px + ${videoSizes[3].width}px);
+  left: calc(
+    ${basicLeft}% - ${videoSizes[5].width / 2}px + ${videoSizes[3].width}px
+  );
 `;
 
 const StyledThirdVideo = styled(AbsoluteWrapper)`
   top: calc(-30px + 295px + ${videoSizes[4].height}px);
-  left: calc(55% - ${videoSizes[5].width / 2}px);
+  left: calc(${basicLeft}% - ${videoSizes[5].width / 2}px);
 `;
 
 const StyledFourthVideo = styled(AbsoluteWrapper)`
   top: calc(-30px + 295px);
-  left: calc(55% - ${videoSizes[5].width / 2}px - ${videoSizes[4].width}px);
+  left: calc(
+    ${basicLeft}% - ${videoSizes[5].width / 2}px - ${videoSizes[4].width}px
+  );
 `;
 
 const StyledFifthVideo = styled(AbsoluteWrapper)`
   top: -30px;
-  left: calc(55% - ${videoSizes[5].width / 2}px);
+  left: calc(${basicLeft}% - ${videoSizes[5].width / 2}px);
 `;
 
 const IndexPage = () => {
