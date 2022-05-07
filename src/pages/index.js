@@ -137,7 +137,7 @@ const IndexPage = () => {
         <StyledAllVideoWrapper>
           <StyledFifthVideo>
             <iframe
-              src='https://player.vimeo.com/video/705880840?h=7f2ca28075'
+              src='https://player.vimeo.com/video/705880840?h=7f2ca28075&title=0&byline=0&portrait=0'
               width='480'
               height='320'
               frameborder='0'
@@ -148,7 +148,7 @@ const IndexPage = () => {
           </StyledFifthVideo>
           <StyledFourthVideo>
             <iframe
-              src='https://player.vimeo.com/video/705511422?h=0efc6fbe38'
+              src='https://player.vimeo.com/video/705511422?h=0efc6fbe38&title=0&byline=0&portrait=0'
               width='426'
               height='240'
               frameborder='0'
@@ -159,7 +159,7 @@ const IndexPage = () => {
           </StyledFourthVideo>
           <StyledThirdVideo>
             <iframe
-              src='https://player.vimeo.com/video/705510337?h=9244c39330'
+              src='https://player.vimeo.com/video/705510337?h=9244c39330&title=0&byline=0&portrait=0'
               width='341'
               height='192'
               frameborder='0'
@@ -170,7 +170,7 @@ const IndexPage = () => {
           </StyledThirdVideo>
           <StyledSecondVideo>
             <iframe
-              src='https://player.vimeo.com/video/705509912?h=1f1327444e'
+              src='https://player.vimeo.com/video/705509912?h=1f1327444e&title=0&byline=0&portrait=0'
               width='256'
               height='144'
               frameborder='0'
@@ -181,7 +181,7 @@ const IndexPage = () => {
           </StyledSecondVideo>
           <StyledFirstVideo>
             <iframe
-              src='https://player.vimeo.com/video/705509449?h=20bc40e5fb'
+              src='https://player.vimeo.com/video/705509449?h=20bc40e5fb&title=0&byline=0&portrait=0'
               width='128'
               height='72'
               frameborder='0'
